@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loksewa</title>
-</head>
-<body>
-  <div class="container">
-    <div class="navBar">
-      <div class="logo">
-        <img src="./images/logo.png" alt="">
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful Navbar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="logo">
+            <a href="#" class="brand">BrandName</a>
+          </div>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="#" class="nav-links">Home</a></li>
+            <li><a href="#" class="nav-links">About</a></li>
+            <li><a href="#" class="nav-links">Services</a></li>
+            <li><a href="#" class="nav-links">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
-  </div>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
