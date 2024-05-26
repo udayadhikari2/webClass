@@ -1,0 +1,23 @@
+.container{
+display: flex;
+justify-content:space-between;
+border: 2px solid red;
+background-color: #10ca92;
+padding:10px 15px;
+align-items: center;
+}
+
+.search input{
+    padding: 20px;
+    border-radius: 15px;
+    color:green;
+    border:none;
+    text-align: left;
+}
+.search input:focus{
+    background-color: red;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+}
