@@ -1,0 +1,22 @@
+h1{
+position: relative;
+text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+justify-content: space-around;
+align-items: center;
+background-color: #058aa1;
+}
+.logo img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.search input{
+    border-radius: 10px;
+    border:none;
+    padding: 20px 30px;
+}
