@@ -1,0 +1,53 @@
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  .container{
+    display: flex;
+    width:100%;
+    border:2px solid red;
+    justify-content: space-around;
+    height:90px;
+    background-image: linear-gradient(to left top,red,blue,green);
+    align-items: center;
+    flex: display;
+  }
+  nav li a{
+    margin: 0px 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+  }
+  li{
+    text-decoration: none;
+  }
+img{
+  border-radius: 20px;
+}
+li{
+  text-decoration: none;
+list-style: none;
+}
+
+.signin{
+  margin: 0px;
+  padding: 8px;
+  background-color: #079191;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+  border: 1px solid white;
+  border-radius: 12px;
+}
+.sigin:hover{
+  margin: 0px;
+  color: rgb(red, green, blue);
+  border: 1px solid #079191;
+}
