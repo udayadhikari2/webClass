@@ -1,23 +1,54 @@
 body{
-    background-position: cover;
+    background-color: rgb(24, 137, 230);
 }
-
 
 .container{
     display: flex;
-    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    background-image: linear-gradient(to left,rgb(8, 241, 66),rgb(1, 215, 253));
+    align-items: center;
 }
 nav{
     background-color: transparent;
+    display: flex;
 }
- nav a{
+nav li{
+    list-style: none;
+    text-decoration: none;
+}
+ nav li a{
     display: inline-block;
     padding: 10px;
     margin: 20px;
     text-decoration: none;
     color: black;
 }
-nav a:hover{
+nav li a:hover{
     color: rgb(0, 255, 255);
     background-position: 10px;
 }
+.signin{
+    background-color: rgb(7, 245, 225);
+    border-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: auto;
+    cursor: pointer;
+    size: 20px;
+    display: inline-block;
+    
+}
+.signin:hover{
+    background-color: rgb(45, 224, 39);
+    border-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 7px;
+    margin: auto;
+    cursor: pointer;
+   
+    
+}
+
