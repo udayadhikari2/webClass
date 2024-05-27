@@ -33,19 +33,48 @@ nav li a {
   color: #fff;
   font-size: 18px;
 }
-.sigin{
-  margin:0px;
-  padding:8px 12px;
-  background-color: #079191;
+.sign-in{
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  border: none;
   color: white;
-  font-weight: bold;
-  cursor: pointer;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-size: 18px;
-  border: 1px solid white;
-  border-radius: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
 }
-.sigin:hover{
-   background-color: #07b642;
-  color: rgb(244, 9, 9);
-  border: 1px solid #079191;
+
+.sign-in::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-30deg);
+  transition: 0.5s;
+}
+
+.sign-in:hover::before {
+  left: 100%;
+}
+
+.sign-in:hover {
+  background: linear-gradient(135deg, #5a01ab 0%, #1565c0 100%);
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sign-in:active {
+  background: linear-gradient(135deg, #490089 0%, #0b4b82 100%);
+  transform: scale(1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
