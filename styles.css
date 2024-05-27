@@ -2,11 +2,17 @@ h1{
 position: relative;
 text-align: center;
 }
+body{
+    font-family, helvetica, sana-serif;
+    background-color: #cde6fc;
+}
 .container{
     display: flex;
+    width: 100%;
+    border: 2px solid red;
     flex-direction: row;
-    height: 150px;
-justify-content: space-around;
+    height: 90px;
+justify-content: space-between;
 align-items: center;
 background-color: #058aa1;
 }
@@ -15,8 +21,39 @@ background-color: #058aa1;
     width: 60px;
     border-radius: 50%;
 }
+img{
+    border-radius:20px;
+}
+nav{
+    display:flex;
+}
+li{
+    list-style: none;
+}
 .search input{
-    border-radius: 10px;
+    border-radius: 50px;
     border:none;
-    padding: 20px 30px;
+    padding: 20px 10px;
+    font-size:20px 
+    border: 1px solid white;
+}
+nav li a{
+    margin: 10px 15px;
+    text-decoration: none;
+    color:white;
+    font-size:18px;
+}
+.sigin{
+    margin:10px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #079191;
+    cursor:pointer;
+    font-weight: bold;
+}
+.sigin:hover{
+    border:#058aa1;
+    font-size: medium;
+    cursor: pointer;
+    background-color: #1f96ac;
 }
