@@ -1,0 +1,17 @@
+.container{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+    background-color: linear-gradient(to left top,blue,white,red);
+nav{
+    display: flex;
+    nav li a
+}
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+}
