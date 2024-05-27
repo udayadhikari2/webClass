@@ -41,27 +41,48 @@ img{
     border-radius: 50px;
 }
 
-.sign-in {
-    background-color: #007bff;
+.sign-in{
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
     border: none;
     color: white;
-    padding: 15px 30px;
+    padding: 15px 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 12px;
-    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 50px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.sign-in::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-30deg);
+    transition: 0.5s;
+}
+
+.sign-in:hover::before {
+    left: 100%;
 }
 
 .sign-in:hover {
-    background-color: #0056b3;
+    background: linear-gradient(135deg, #5a01ab 0%, #1565c0 100%);
     transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
 
 .sign-in:active {
-    background-color: #004494;
+    background: linear-gradient(135deg, #490089 0%, #0b4b82 100%);
     transform: scale(1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
