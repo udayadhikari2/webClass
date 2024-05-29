@@ -8,10 +8,10 @@ body{
 }
 .container{
     display: flex;
-    width: 100%;
+    width: 200%;
     border: 2px solid red;
     flex-direction: row;
-    height: 90px;
+    height: 120px;
 justify-content: space-between;
 align-items: center;
 background-color: #058aa1;
@@ -31,9 +31,9 @@ li{
     list-style: none;
 }
 .search input{
-    border-radius: 50px;
+    border-radius: 30px;
     border:none;
-    padding: 20px 10px;
+    padding: 10px 10px;
     font-size:20px 
     border: 1px solid white;
 }
@@ -55,5 +55,55 @@ nav li a{
     border:#058aa1;
     font-size: medium;
     cursor: pointer;
-    background-color: #1f96ac;
+    background-color: #1f96ac;6
+}.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+.srch{
+    font-family: Time new roman;
+    width: 200px;
+    height:40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top:13px ;
+    color:#fff;
+    border-right:none;
+    font-size:16px;
+    float:left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border:2px solid #ff7200;
+    margin-top:13px;
+    color:#fff;
+    font-size:15px;
+    border-bottom-right-radius:5px;
+    border-bottom-right-radius:5px;
+}
+.btn:focus{
+    outline:none;
+}
+.srch:focus{
+    outline:none;
+}
+.content{
+    width:1200px;
+    height: auto;
+    margin:auto;
+    color: #fff;
+    position:relative;
+}
+.content.par{
+    padding-left:20px;
+    padding-bottom:25px;
+    font-family:arial;
+    letter-spacing:1.2px;
+    line-height:30px;
 }
