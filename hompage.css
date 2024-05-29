@@ -1,34 +1,39 @@
-body{
-    background-color: rgb(24, 137, 230);
+body {
+    background-color: rgb(212, 163, 163);
 }
 
-.container{
+.container {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    background-image: linear-gradient(to left,rgb(8, 241, 66),rgb(1, 215, 253));
+    background-image: linear-gradient(to left, rgb(8, 241, 66), rgb(1, 215, 253));
     align-items: center;
 }
-nav{
+
+nav {
     background-color: transparent;
     display: flex;
 }
-nav li{
+
+nav li {
     list-style: none;
     text-decoration: none;
 }
- nav li a{
+
+nav li a {
     display: inline-block;
     padding: 10px;
     margin: 20px;
     text-decoration: none;
     color: black;
 }
-nav li a:hover{
+
+nav li a:hover {
     color: rgb(0, 255, 255);
     background-position: 10px;
 }
-.signin{
+
+.signin {
     background-color: rgb(7, 245, 225);
     border-color: white;
     color: black;
@@ -38,9 +43,10 @@ nav li a:hover{
     cursor: pointer;
     size: 20px;
     display: inline-block;
-    
+
 }
-.signin:hover{
+
+.signin:hover {
     background-color: rgb(45, 224, 39);
     border-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -48,7 +54,50 @@ nav li a:hover{
     padding: 7px;
     margin: auto;
     cursor: pointer;
-   
-    
+
+
 }
 
+.content {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.left {
+    background-color: aliceblue;
+    width: 200px;
+    height: 30%;
+    margin: auto;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.center {
+    background-color: aliceblue;
+    width: 800px;
+   height: 200px;
+    margin: auto;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.right {
+    background-color: aliceblue;
+    width: 200px;
+    height: 30%;
+    margin: auto;
+    padding: 2px;
+    border-radius: 3px;
+}
+.cen-cont{
+        background-color: aliceblue;
+        width: 100%
+        height: 30%;
+        margin: auto;
+        padding: 2px;
+        border-radius: 3px;
+        margin: top 10px;
+        padding: 10px;
+}
