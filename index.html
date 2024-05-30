@@ -1,22 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB</title>
-</head>
-<body>
-    <div class="container" style="background-color: aqua;">
-        <div class="logo">
-            <img src="https://image.similarpng.com/very-thumbnail/2021/05/Logo-design-illustration-on-transparent-background-PNG.png" alt="logo" title="logo" height="90px" width="90px">
-        </div>
-        <nav style="position: center;">
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
-        </nav>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-image: url(./images/bgg.jpg);
+}
 
-    </div>
+.navbar {
+
+  width: 100%;
+  background-color:transparent;
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  padding: 12px;
+  color: rgb(29, 6, 228);
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  position: relative;
+}
+
+.navbar a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: transparent;
+  transition: width 0.3s ease, background-color 0.3s ease;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+  background: white;
+}
+
+.navbar .search {
+  margin-left: auto;
+}
+
+.active {
+  background-color: #c3c8c3;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar a {
+    text-align: center;
+  }
+}
+</style>
+<body>
+
+<div class="navbar">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+  <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+  <a class="search" href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+</div>
+
 </body>
 </html>
