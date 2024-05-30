@@ -8,7 +8,7 @@ body{
 }
 .container{
     display: flex;
-    width: 200%;
+    width: 100%;
     border: 2px solid red;
     flex-direction: row;
     height: 120px;
@@ -31,7 +31,7 @@ li{
     list-style: none;
 }
 .search input{
-    border-radius: 30px;
+    border-radius: 10px;
     border:none;
     padding: 10px 10px;
     font-size:20px 
@@ -45,8 +45,8 @@ nav li a{
 }
 .sigin{
     margin:10px;
-    font-size: 20px;
-    border-radius: 20px;
+    font-size: 30px;
+    border-radius: 30px;
     background-color: #079191;
     cursor:pointer;
     font-weight: bold;
