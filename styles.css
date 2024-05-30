@@ -38,6 +38,9 @@ ul li a {
   font-size: 18px;
   margin: 5px 30px;
 }
+ul li a:hover{
+  color: #25fc54;
+}
 
 .sign-in {
   position: relative;
