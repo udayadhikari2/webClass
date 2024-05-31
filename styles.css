@@ -55,8 +55,9 @@ nav li a{
     font-size: medium;
     cursor: pointer;
     background-color: #1f96ac;
+{
+
 }
-.content{
-    position:relative;
+    
 
 }
