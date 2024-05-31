@@ -7,20 +7,25 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   background-image: url(./images/bgg.jpg);
+  background-size: cover;
 }
 
 .navbar {
-
   width: 100%;
-  background-color:transparent;
+  background-color: transparent;
   overflow: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .navbar a {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
   padding: 12px;
-  color: rgb(29, 6, 228);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 17px;
   display: block;
@@ -46,10 +51,37 @@ body {
 
 .navbar .search {
   margin-left: auto;
+  position: relative;
 }
 
-.active {
-  background-color: #c3c8c3;
+.search-bar {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  outline: none;
+  width: 0;
+  transition: width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  opacity: 0;
+}
+
+.search-bar.active {
+  display: block;
+  width: 200px;
+  opacity: 1;
+}
+
+.search-icon {
+  cursor: pointer;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.search-icon.hidden {
+  opacity: 0;
 }
 
 @media screen and (max-width: 500px) {
@@ -59,6 +91,9 @@ body {
   .navbar a {
     text-align: center;
   }
+  .search-bar.active {
+    width: 100%;
+  }
 }
 </style>
 <body>
@@ -67,8 +102,35 @@ body {
   <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
   <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
   <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
-  <a class="search" href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+  <div class="search">
+    <i class="fa fa-fw fa-search search-icon" onclick="toggleSearchBar()"></i>
+    <input type="text" class="search-bar" id="searchBar" placeholder="Search...">
+  </div>
 </div>
+
+<script>
+function toggleSearchBar() {
+  var searchBar = document.getElementById('searchBar');
+  var searchIcon = document.querySelector('.search-icon');
+  
+  if (searchBar.classList.contains('active')) {
+    searchBar.classList.remove('active');
+    setTimeout(function() {
+      searchBar.style.display = 'none';
+      searchIcon.classList.remove('hidden');
+    }, 400); // Match this time with the transition duration
+  } else {
+    searchBar.style.display = 'block';
+    setTimeout(function() {
+      searchBar.classList.add('active');
+    }, 10); // Small delay to trigger the transition
+    searchIcon.classList.add('hidden');
+    setTimeout(function() {
+      searchIcon.style.display = 'none';
+    }, 400); // Hide the icon completely after the transition
+  }
+}
+</script>
 
 </body>
 </html>
