@@ -56,3 +56,7 @@ nav li a{
     cursor: pointer;
     background-color: #1f96ac;
 }
+.content{
+    position:relative;
+
+}
