@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyApp</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./aboutUs.css">
+    <link rel="stylesheet" href="./hero.css">
+    <link rel="stylesheet" href="./whyUs.css">
 
     <script src="https://kit.fontawesome.com/2602b3cb9b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container">
-        <div class="logo">
-            <!-- image tag img -->
-            <img width="60px" height="60px" src="https://cdn.pixabay.com/photo/2017/03/16/21/18/logo-2150297_640.png"
-                alt="my logo" title="my trade logo">
-        </div>
         <nav>
+            <div class="logo">
+                <!-- image tag img -->
+                <img width="60px" height="60px"
+                    src="./images/EnglishStamp.jpg" alt="my logo"
+                    title="my trade logo">
+            </div>
             <ul>
-                <li>
-                    <a href="#">About us</a>
+                <li class="active">
+                    <a href="#about-us">About us</a>
                 </li>
                 <li>
                     <a href="#">Home</a>
@@ -32,28 +36,33 @@
                     <a href="#">Contact us</a>
                 </li>
             </ul>
-
+            <div class="search">
+                <input type="text" placeholder="  search .....">
+                <i class="fas fa-search"></i>
+            </div>
+            <button class="sign-in">
+                Sign In
+            </button>
         </nav>
-        <div class="search">
-            <input type="text" placeholder="  search .....">
-            <i class="fas fa-search"></i>
-        </div>
-        <button class="sign-in">
-            Sign In
-        </button>
-    </div>
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Our Service</h1>
-            <p>Your success is our priority. Join us today and achieve your dreams.</p>
-            <a href="#" class="cta-button">Get Started</a>
-        </div>
-        <div class="testimonial">
-            <p class="testimonial-text">"This service has changed my life! I can't recommend it enough. The support and
-                results are unmatched!"</p>
-            <p class="testimonial-author">- Uday Adhikari</p>
-        </div>
-    </section>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Our Service</h1>
+                <p>Your success is our priority. Join us today and achieve your dreams.</p>
+                <a href="#" class="cta-button">Get Started</a>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"This service has changed my life! I can't recommend it enough. The support
+                    and
+                    results are unmatched!"</p>
+                <p class="testimonial-author">- Uday Adhikari</p>
+            </div>
+        </section>
+        <section id="about-us">
+           
+        </section>
+        <section id="why-us">
+           
+        </section>
     </div>
 </body>
 
