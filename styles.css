@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  background-color: rgba(160, 215, 224, 0.582);
+  background-color: rgba(19, 180, 131, 0.582);
 }
 
 nav {
@@ -19,7 +19,7 @@ nav {
   width: 100%;
   justify-content: space-around;
   height: 90px;
-  background-color: #2575fc;
+  background-color: #04153313;
   align-items: center;
   box-shadow: 5px 4px 20px 3px rgba(0, 0, 0, 0.75);
 }
@@ -53,7 +53,7 @@ ul li a:hover {
 
 .sign-in {
   position: relative;
-  background-color: #eb2f2f;
+  background-color: #242426;
   border: none;
   color: white;
   padding: 10px 25px;
@@ -66,6 +66,7 @@ ul li a:hover {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: all 0.5s ease-in-out;
+  
 }
 
 .sign-in::before {
@@ -95,28 +96,48 @@ ul li a:hover {
   transform: scale(1);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
-
-.search input {
-  padding: 10px 12px;
-  border-radius: 10px;
-  color: red;
-  font-size: 14px;
-  font-weight: bold;
-  border: none;
-  outline: none;
-  width: 200px;
-
-}
-
-.search input:focus {
-  border: none;
-  font-weight: 400;
-}
-
-.search i {
+.search {
   position: relative;
-  left: -30px;
-  cursor: pointer;
-  color: red
+  width: 300px; 
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: none;
+  transition: width 0.5s ease; 
 }
 
+.search input[type="text"] {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.search input[type="text"]:focus {
+  outline: none;
+}
+
+.search .fas.fa-search {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 18px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.search:hover {
+  width: 400px;
+}
+
+.search:hover input[type="text"] {
+  padding-right: 60px; 
+}
+.search:hover .fas.fa-search {
+  color: #333;
+}
+ .author i{
+  margin-left: 410px;
+}

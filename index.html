@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyApp</title>
+    <link rel="shortcut icon" type="x-icon" href="./images/service.png">
+    <title>OnDemandAssist</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./aboutUs.css">
     <link rel="stylesheet" href="./hero.css">
@@ -30,17 +31,22 @@
                     <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="#">Why us</a>
+                    <a href="#why-us">Why us</a>
                 </li>
                 <li>
                     <a href="#">Contact us</a>
                 </li>
             </ul>
             <div class="search">
-                <input type="text" placeholder="  search .....">
-                <i class="fas fa-search"></i>
+                <input type="text" placeholder="  Search Your Sevice......"> <i class="fas fa-search"></i>
+                
             </div>
-            <button class="sign-in">
+            <script>
+                function signin() {
+                    window.location.href = "page.html";
+                }
+            </script>
+            <button class="sign-in" onclick="signin()">
                 Sign In
             </button>
         </nav>
@@ -54,7 +60,7 @@
                 <p class="testimonial-text">"This service has changed my life! I can't recommend it enough. The support
                     and
                     results are unmatched!"</p>
-                <p class="testimonial-author">- Uday Adhikari</p>
+                <p class="author"><i class="fas fa-pen"></i>Uday Adhikari</p>
             </div>
         </section>
         <section id="about-us">
