@@ -1,0 +1,49 @@
+#about-us {
+    background-color: rgb(166, 169, 178);
+    height: 90.3vh;
+    padding: 50px 20px;
+    text-align: center;
+    
+}
+.about h1{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: -30px;
+    font-size: 5em;
+    font-weight: bolder;
+}
+.about h2{
+    text-align: left;
+    font-size: 2em;
+}
+.about p{
+    text-align: left;
+    font-size:1em;
+    font-weight: bold;
+    width: 600px;
+    color: rgb(115, 12, 29);
+}
+.about h3{
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.about ol li{
+    text-align: left;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.about ol h4{
+    text-align: left;
+}
+
+.about h4{
+    text-align: left;
+    color: rgb(9, 3, 29);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+.about h5{
+    color: rgb(51, 5, 5);
+    text-align: left;
+}
