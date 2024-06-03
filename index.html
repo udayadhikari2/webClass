@@ -1,136 +1,103 @@
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  background-image: url(./images/bgg.jpg);
-  background-size: cover;
-}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyApp</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/aboutUs.css">
 
-.navbar {
-  width: 100%;
-  background-color: transparent;
-  overflow: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
+    <script src="https://kit.fontawesome.com/2602b3cb9b.js" crossorigin="anonymous"></script>
+</head>
 
-.navbar a {
-  margin-top: 20px;
-  margin-left: 30px;
-  margin-right: 30px;
-  padding: 12px;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-  position: relative;
-}
-
-.navbar a::after {
-  content: '';
-  display: block;
-  height: 2px;
-  background: transparent;
-  transition: width 0.3s ease, background-color 0.3s ease;
-  width: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.navbar a:hover::after {
-  width: 100%;
-  background: white;
-}
-
-.navbar .search {
-  margin-left: auto;
-  position: relative;
-}
-
-.search-bar {
-  display: none;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  border: none;
-  padding: 5px;
-  border-radius: 4px;
-  outline: none;
-  width: 0;
-  transition: width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-  opacity: 0;
-}
-
-.search-bar.active {
-  display: block;
-  width: 200px;
-  opacity: 1;
-}
-
-.search-icon {
-  cursor: pointer;
-  transition: opacity 0.4s ease-in-out;
-}
-
-.search-icon.hidden {
-  opacity: 0;
-}
-
-@media screen and (max-width: 500px) {
-  .navbar {
-    flex-direction: column;
-  }
-  .navbar a {
-    text-align: center;
-  }
-  .search-bar.active {
-    width: 100%;
-  }
-}
-</style>
 <body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <!-- image tag img -->
+                <img width="60px" height="60px"
+                    src="./images/EnglishStamp.jpg" alt="my logo"
+                    title="my trade logo">
+            </div>
+            <ul>
+                <li class="active">
+                    <a href="#about-us">About us</a>
+                </li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Why us</a>
+                </li>
+                <li>
+                    <a href="#">Contact us</a>
+                </li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="  search .....">
+                <i class="fas fa-search"></i>
+            </div>
+            <button class="sign-in">
+                Sign In
+            </button>
+        </nav>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Our Service</h1>
+                <p>Your success is our priority. Join us today and achieve your dreams.</p>
+                <a href="#" class="cta-button">Get Started</a>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"This service has changed my life! I can't recommend it enough. The support
+                    and
+                    results are unmatched!"</p>
+                <p class="testimonial-author">- Uday Adhikari</p>
+            </div>
+        </section>
+        <section id="about-us">
+            <div class="about-container">
+                <div class="about-title">
+                    <h1>About Us</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione mollitia nostrum aliquid natus inventore blanditiis est ullam ipsa et sint, minima fugit quis quas. Ipsa possimus expedita quasi. Mollitia, laudantium.</p>
+                </div>
+                <div class="about-content">
+                    <div class="info">
 
-<div class="navbar">
-  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
-  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
-  <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
-  <div class="search">
-    <i class="fa fa-fw fa-search search-icon" onclick="toggleSearchBar()"></i>
-    <input type="text" class="search-bar" id="searchBar" placeholder="Search...">
-  </div>
-</div>
-
-<script>
-function toggleSearchBar() {
-  var searchBar = document.getElementById('searchBar');
-  var searchIcon = document.querySelector('.search-icon');
-  
-  if (searchBar.classList.contains('active')) {
-    searchBar.classList.remove('active');
-    setTimeout(function() {
-      searchBar.style.display = 'none';
-      searchIcon.classList.remove('hidden');
-    }, 400); // Match this time with the transition duration
-  } else {
-    searchBar.style.display = 'block';
-    setTimeout(function() {
-      searchBar.classList.add('active');
-    }, 10); // Small delay to trigger the transition
-    searchIcon.classList.add('hidden');
-    setTimeout(function() {
-      searchIcon.style.display = 'none';
-    }, 400); // Hide the icon completely after the transition
-  }
-}
-</script>
-
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium laborum eum voluptate quo dignissimos, quod expedita iure ipsam ipsum, consectetur voluptates tempora reprehenderit voluptas perferendis obcaecati illo laboriosam. Voluptatem.</p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <a href="">Our Goals</a>
+                                <span>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dicta, voluptatem sed illo, unde facere dolorum enim alias inventore explicabo officiis autem praesentium? Doloribus nobis ullam id inventore optio laboriosam!</p>
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <a href="">Our Vsion</a>
+                                <span>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dicta, voluptatem sed illo, unde facere dolorum enim alias inventore explicabo officiis autem praesentium? Doloribus nobis ullam id inventore optio laboriosam!</p>
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <a href="">Our Services</a>
+                                <span>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dicta, voluptatem sed illo, unde facere dolorum enim alias inventore explicabo officiis autem praesentium? Doloribus nobis ullam id inventore optio laboriosam!</p>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <img src="./images/discuss.jpg" width="500px" height="400px" alt=""/>
+                    </div>
+                </div>
+            </div>        
+        </section>
+       
+    </div>
 </body>
+
 </html>
+<!-- styles Types: Inline Style, Embedded Style, External Styles -->
