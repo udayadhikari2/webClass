@@ -1,0 +1,90 @@
+#Foot{
+    background-color: #10131a;
+    height: 150vh;
+    color: #fff;
+}
+.footer-container{
+    padding: 10px 15px;
+    margin:4px;
+}
+.services-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.features{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+
+
+}
+.Community{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
+
+.explore{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
+
+
+.features ul{
+    display: flex;
+    flex-direction: column;
+
+}
+.explore ul{
+    display: flex;
+    flex-direction: column;
+
+}
+.Community ul{
+    display: flex;
+    flex-direction: column;
+}
+.features ul li{
+    padding: 5px 8px;
+    margin: 5px 10px;
+}
+.explore ul li{
+    padding: 5px 8px;
+    margin: 5px 10px;
+}
+.Community ul li{
+    padding: 5px 8px;
+    margin: 5px 10px;
+}
+.quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.quote img{
+    border-radius: 50%;
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: inline-block;
+
+}
+.quote h3{
+    color: gray;
+    text-align: center;
+    display: flex;
+    text-align: left;
+    font-size: 1.5em;
+    max-width: 100px;
+    min-width: none;
+
+}
+
