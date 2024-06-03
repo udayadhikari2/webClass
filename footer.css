@@ -1,8 +1,9 @@
 #Foot{
     background-color: #10131a;
-    height: 150vh;
+    height: 40vh;
     color: #fff;
 }
+
 .footer-container{
     padding: 10px 15px;
     margin:4px;
@@ -14,12 +15,15 @@
     align-items: center;
 
 }
-.features{
+.Company{
     display: flex;
     flex-direction:column;
     text-align: center;
-
-
+}
+.Services{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
 }
 .Community{
     display: flex;
@@ -27,19 +31,23 @@
     text-align: center;
 }
 
-.explore{
+.Get_Help{
     display: flex;
     flex-direction:column;
     text-align: center;
 }
 
 
-.features ul{
+.Company ul{
     display: flex;
     flex-direction: column;
 
 }
-.explore ul{
+.Services ul{
+    display: flex;
+    flex-direction: column;
+}
+.Get_Help ul{
     display: flex;
     flex-direction: column;
 
@@ -48,15 +56,19 @@
     display: flex;
     flex-direction: column;
 }
-.features ul li{
+.Company ul li{
     padding: 5px 8px;
     margin: 5px 10px;
 }
-.explore ul li{
+.Get_Help ul li{
     padding: 5px 8px;
     margin: 5px 10px;
 }
 .Community ul li{
+    padding: 5px 8px;
+    margin: 5px 10px;
+}
+.Services ul li{
     padding: 5px 8px;
     margin: 5px 10px;
 }
@@ -67,7 +79,7 @@
     justify-content: center;
 }
 .quote img{
-    border-radius: 50%;
+    border-radius: 55%;
     margin-top: 5px;
     width: 100px;
     height: 100px;
@@ -77,14 +89,69 @@
     display: inline-block;
 
 }
-.quote h3{
-    color: gray;
-    text-align: center;
-    display: flex;
-    text-align: left;
-    font-size: 1.5em;
-    max-width: 100px;
-    min-width: none;
 
+
+ .Social a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
 }
+.Social a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+@media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+  .foot-text p{
+    margin-top: 60%;
+    text-align:left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+
+  }
+  .quote h4{
+    color: rgb(97, 95, 95);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+  }
+  .quote h2{
+    color: rgb(10, 96, 92);
+    font-family: 'Times New Roman', Times, serif;
+  }
+.quote h3{
+    color:rgb(94, 44, 126);
+}
+
+.quote i{
+    color:none;
+    background-color: none;
+    padding: 10px;
+}
+
+
+
+
+
+
+
 
