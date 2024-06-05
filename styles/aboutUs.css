@@ -46,5 +46,10 @@
     color:rgb(138, 7, 7);
     border-radius: 50%;
 }
-
-
+.about-title h1{
+    color: yellow;
+}
+ .about-title {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
