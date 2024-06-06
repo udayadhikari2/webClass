@@ -1,6 +1,6 @@
 #about-us {
-    height: 100vh;
-    background-color: rgba(54, 0, 36, 0.8);
+    height: 92vh;
+    background-color: rgba(9, 9, 9, 0.8);
 }
 .about-us-container{
     display: flex;
@@ -23,11 +23,16 @@
     color: white;
     padding: 2px;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 50px;
+    text-transform: capitalize;
 }
 .two-container h6{
-    font-size: 18px;
+    font-size: 20px;
     color: white;
+    text-transform: capitalize;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+
 }
 .two-container h6 span{
     color: red;
@@ -40,11 +45,45 @@
     background-color: #9c0101;
 }
 .about-us-container p{
-    color: white;
+    color:#fcfc;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 18px;
+    margin-bottom: 40px;
+
+
 }
 
 
 .one img{
-    width: 300px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
+    align-items: left;
 }
+.letstalk-button:active {
+    transform: translateY(2px); /* move the button down slightly on click */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: .5s; /* add a more prominent shadow on click */
+  }
+  .letstalk-button {
+    background-color: #145d47; /* green background */
+    color: #fff; /* white text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer; /* change cursor to pointer on hover */
+  }
+  
+  .letstalk-button:hover {
+    background-color: #073850; /* darker green background on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle shadow on hover */
+    transform: translateY(-2px); /* move the button up slightly on hover */
+    transition: all 0.2s ease-in-out; 
+    cursor:pointer ;
+    
+    /* smooth transition effect */
+  }
+  
+
+  /*here*/
+  
