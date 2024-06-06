@@ -3,35 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>divine</title>
+    <title>MyApp</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/aboutUs.css">
+    <link rel="stylesheet" href="./styles/contactus.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <script src="https://kit.fontawesome.com/2602b3cb9b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="container" style="border:2px solid black;
-    padding: 50px;">
-    <div class="logo">
-        <img width="60px" height="60px" src="https://th.bing.com/th/id/OIP.0r5Ys_9L_RRq_NhCsKDP2QHaHa?rs=1&pid=ImgDetMain" alt="hi">
+    <div class="container">
         <nav>
-            <a href="#">home</a>
-            <a href="parbati">about</a>
-            <a href="#">how we</a>
-            <a href="$">us</a>      
+            <div class="logo">
+                <!-- image tag img -->
+                <img width="60px" height="60px"
+                    src="./images/EnglishStamp.jpg" alt="my logo"
+                    title="my trade logo">
+            </div>
+            <ul>
+                <li class="active">
+                    <a href="#about-us">About us</a>
+                </li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Why us</a>
+                </li>
+                <li>
+                    <a href="#contact-us">Contact us</a>
+                </li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="  search .....">
+                <i class="fas fa-search"></i>
+            </div>
+            <button class="sign-in">
+                Sign In
+            </button>
         </nav>
-    </div>
-    </div>
-    <footer>
-        <div class="footer-container">
-            <div class="service-list">
-                <div class="feature">
-                    <h1>explore</h1>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Our Service</h1>
+                <p>Your success is our priority. Join us today and achieve your dreams.</p>
+                <a href="#" class="cta-button">Get Started</a>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"This service has changed my life! I can't recommend it enough. The support
+                    and
+                    results are unmatched!"</p>
+                <p class="testimonial-author">- Uday Adhikari</p>
+            </div>
+        </section>
+        <section id="about-us">
+            <div class="about-us-cont">
+                <div class="title">
+                    <h1>About Us</h1>
+                    <p>
+                        Paragraphs are the building blocks of papers. Many students define paragraphs in terms of
+                        length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc.
+                        In reality, though, the unity and coherence of ideas among sentences is what constitutes a
+                        paragraph.
+                    </p>
+                </div>
+                <div class="low">
+                    <p>
+                        Various educators teach rules governing the length of paragraphs. They may say that a paragraph
+                        should be 100 to 200 words long, or be no more than five or six sentences. But a good paragraph
+                        should not be measured in characters, words, or sentences.
+                    </p>
+                </div>
+                <div class="list">
                     <ul>
-                    <li>sujal</li>
-                    <li>sujal</li>
+                        <li>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <a href="#">Shopping</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro delectus voluptas odit quo
+                                beatae. </p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <a href="#">Marketing</a>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, dicta laborum porro
+                                placeat veniam exercitationem, praesentium accusamus veritatis numquam maxime ipsam
+                                eligendi
+                                iure sapiente dolorum asperiores. Rem enim rerum accusantium.</p>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-product-hunt"></i>
+                            <a href="#">Products</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint totam, quos
+                                pariatur
+                                deserunt tempora cupiditate praesentium vero rem recusandae voluptas nulla ad optio
+                                provident veniam hic quasi expedita ex!</p>
+                        </li>
                     </ul>
+                    <div class="img">
+                        <img src="./images/abtus.png" alt="about-us">
+                    </div>
                 </div>
             </div>
+        </section>
+        <section id="contact-us">
+            <div class="contus-content">
+                <div class="title1">
+                    <h1><strong>Contact Us</strong></h1>
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae impedit esse nisi asperiores
+                        labore provident ex consequuntur fugit ratione corporis. Sapiente porro eveniet quibusdam quo,
+                        numquam aliquid minus accusamus debitis?</p>
+                </div>
+                <div class="form1">
+                    <h2>Get in Touch</h2>
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                        <input type="submit" value="Send Message">
+                    </form>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-youtube fa-2x"></i>
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                    <i class="fa-brands fa-x-twitter fa-2x"></i>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer id="foot">
+        <div class="cont">
+            <div class="lgo">
+                <img src="./images/EnglishStamp.jpg" alt="">
+                <h3>Build It Together</h3>
+            </div>
+            <div class="services">
+                <div class="features">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>qwerty</li>
+                        <li>asdfghj</li>
+                    </ul>
+                </div>
+                <div class="features">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>qwerty</li>
+                        <li>asdfghj</li>
+                    </ul>
+                </div>
+                <div class="features">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>qwerty</li>
+                        <li>asdfghj</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <hr style="border: 3px;">
         </div>
-    </footer>
-    
-</body>
-</html> 
 
+
+    </footer>
+</body>
+
+</html>
+<!-- styles Types: Inline Style, Embedded Style, External Styles -->
