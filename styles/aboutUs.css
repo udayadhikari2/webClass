@@ -1,17 +1,82 @@
-#about-us{
+#about-us {
     height: 100vh;
     background-color: rgba(23, 127, 158, 0.8);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 12px 0px;
 }
-.one img{
-    padding: 50px;
-    height: 400px;
+
+.one img {
+    padding: 40px;
+    height: 500px;
+    width: 400px;
     border-radius: 30%;
 }
 
+.two h1 {
+    display: flex;
+    flex-direction: row;
+    text-shadow: 2px 2px 5px black;
+    color: white;
+    font-size: 45px;
+}
+
+.two button {
+    width: 120px;
+    height: 35px;
+    background-color: rgb(88, 187, 220);
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+.two h6 {
+    font-size: 30px;
+    color: beige;
+}
+
+.two-container>* {
+    padding: 8px 0px;
+
+}
+
+.two-container button:active {
+    transform: translateY(2px);
+    /* move the button down slightly on click */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: .5s;
+    /* add a more prominent shadow on click */
+}
+
+.two-container button {
+    background-color: #145d47;
+    /* green background */
+    color: #fff;
+    /* white text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    /* change cursor to pointer on hover */
+    width: 200px;
+}
+
+.two-container button:hover {
+    background-color: #073850;
+    /* darker green background on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* add a subtle shadow on hover */
+    transform: translateY(-2px);
+    /* move the button up slightly on hover */
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    /* smooth transition effect */
+}
 
 
+/*here*/
+.two-container p {
+    font-size: larger;
 
-
-
-
-
+}
