@@ -1,15 +1,22 @@
 #about-us {
     height: 92vh;
     background-color: rgba(9, 9, 9, 0.8);
+    padding: 8px 0px;
 }
 .about-us-container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 70%;
     margin: auto;
+    padding: 12px;
+    
 }
+ /*@media only screen and (max-width: 720px) {
+    .about-us-container {
+      flex-direction: column;
+    }
+  } */
 .about-us-container > div{
     padding: 5px 12px;
     margin: 8px;
@@ -25,6 +32,7 @@
     font-weight: bold;
     font-size: 50px;
     text-transform: capitalize;
+    user-select: none;
 }
 .two-container h6{
     font-size: 20px;
@@ -32,6 +40,7 @@
     text-transform: capitalize;
     margin-bottom: 18px;
     letter-spacing: 2px;
+    user-select: none;
 
 }
 .two-container h6 span{
@@ -50,6 +59,8 @@
     line-height: 26px;
     font-size: 18px;
     margin-bottom: 40px;
+    user-select: none;
+    
 
 
 }
@@ -59,11 +70,12 @@
     width: 600px;
     height: 600px;
     align-items: left;
+    border-radius: 0px;
 }
 .letstalk-button:active {
     transform: translateY(2px); /* move the button down slightly on click */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    transition: .5s; /* add a more prominent shadow on click */
+    transition: 0.5s all ease-in-out; /* add a more prominent shadow on click */
   }
   .letstalk-button {
     background-color: #145d47; /* green background */
@@ -72,13 +84,15 @@
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer; /* change cursor to pointer on hover */
+    transition: all 0.5s ease-in-out;
   }
   
   .letstalk-button:hover {
     background-color: #073850; /* darker green background on hover */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle shadow on hover */
-    transform: translateY(-2px); /* move the button up slightly on hover */
-    transition: all 0.2s ease-in-out; 
+    transform: translateY(10px);
+    scale: 1.2; /* move the button up slightly on hover */
+     
     cursor:pointer ;
     
     /* smooth transition effect */
