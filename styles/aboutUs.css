@@ -1,6 +1,89 @@
 #about-us {
     height: 100vh;
     background-color: rgba(23, 127, 158, 0.8);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 12px 0px;
+}
+
+.about-container {
+    padding: 10px 12px;
+    margin: 0px;
+}
+
+.two-container>* {
+    padding: 8px 0px;
+}
+
+.two-container h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.two-container h6 span {
+    color: rgb(34, 104, 184);
+    font-size: 30px;
+}
+
+.two-container h6 i {
+    color: white;
+    font-size: 20px;
+}
+
+
+.about-title {
+    color: white;
+    padding: 8px 4px;
+}
+
+.about-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-title p {
+    padding: 10px 124px
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.info p {
+    margin: 8px
+}
+
+.info ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 18px
+}
+
+.info ul li {
+    padding: 0px 8px
+}
+
+.info ul li span {
+    color: white;
+    padding: 12px;
+}
+
+.info ul li i {
+    padding: 10px;
+    border: 1px solid white;
+    color: rgb(138, 7, 7);
+    border-radius: 50%;
+}
+
+.about-title p {
+    text-align: center;
+    text-shadow: 0cap;
+    font-style: italic;
+    text-shadow: 2px 2px 4px #000000;
+    color: pink;
 }
 
 .one {
@@ -12,19 +95,67 @@
     height: 400;
 }
 
-.button {
-    background-color: #04AA6D;
+
+.two-container button {
+    display: inline-block;
+    position: relative;
+    right: 0px;
+    background-color: #0b83bb;
     border: none;
     color: white;
     padding: 15px 32px;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
+    cursor: pointer;
     font-size: 16px;
-
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
-.two-container{
+
+.two h1 {
+    color: blueviolet;
+    font-size: bold;
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
+
+.two p {
+    color: brown;
+    font-style: italic;
+    font-size: 24px;
+
+}
+
+.two h6 {
+    font-size: blue;
+    font-size: large;
+    font-variant-numeric: diagonal-fractions;
+}
+
+.about-us-container {
+    display: flex;
+    flex-direction: row;
+}
+.two-container-button:active {
+    transform: translateY(2px); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: .5s;
+  }
+  .two-container   button{
+    background-color: #145d47; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer; 
+  }
+  
+  .two-container button:hover {
+    background-color: #073850; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); 
+    transition: all 0.2s ease-in-out; 
+    cursor:pointer ;  
+  }
+  
+
+  
