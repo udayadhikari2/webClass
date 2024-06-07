@@ -56,15 +56,93 @@ padding:0px 8px
 .two p{
     font-weight: 600;
 font-style: italic;
-
-
+font-size: 75px;
 }
 .two h6{
     font-style: italic;
     font-family: monospace;
     font-variant-numeric: diagonal-fractions;
 }
-.two{
+.about-us-container{
     display: flex;
     flex-direction: row;
+}
+.two>*{
+    padding: 8px 12px;
+}
+.two button{
+    
+        transform: translateY(2px); /* move the button down slightly on click */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        transition: .5s; /* add a more prominent shadow on click */
+      }
+      .two button {
+        background-color: #145d47; /* green background */
+        color: #fff; /* white text color */
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer; /* change cursor to pointer on hover */
+        width: 400px; }
+      
+      .two button:hover {
+        background-color: #073850; /* darker green background on hover */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle shadow on hover */
+        transform: translateY(-2px); /* move the button up slightly on hover */
+        transition: all 0.2s ease-in-out; 
+        cursor:pointer ;
+        
+        /* smooth transition effect */
+      }
+      
+      .two h4{
+        font-style: italic;
+        user-select: none;
+      }
+    .three p{
+
+    }
+      /*here*/
+.three{
+    font-style: italic;
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    font-weight: bolder;
+}
+
+    .three:active {
+        transform: translateY(2px); /* move the button down slightly on click */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        transition: .5s; /* add a more prominent shadow on click */
+      }
+     .three{
+        background-color: #0a85d1; /* green background */
+        color: #fff; /* white text color */
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer; /* change cursor to pointer on hover */
+        width: 400px;
+        margin: auto;
+
+    }
+    .three p{
+        text-align: center;
+        width: 100%;
+    }
+      
+     .three:hover {
+        background-color: #073850; /* darker green background on hover */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle shadow on hover */
+        transform: translateY(-2px); /* move the button up slightly on hover */
+        transition: all 0.2s ease-in-out; 
+        cursor:pointer ;
+        
+        /* smooth transition effect */
+      }
+
+      
+    
+      /*here*/
 }
