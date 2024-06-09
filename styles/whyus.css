@@ -1,0 +1,8 @@
+#whyus{
+    height: 100vh;
+    background-color:rgb(10, 107, 50) ;
+}
+.about-us-container{
+    display: flex;
+    flex-direction: row;
+}
