@@ -1,14 +1,14 @@
 #about-us {
-    height: 92vh;
+    height: 100vh;
     background-color: rgba(9, 9, 9, 0.8);
-    padding: 8px 0px;
+    padding: 20px 0px;
 }
 .about-us-container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin: auto;
+    margin: 120px;
     padding: 12px;
     
 }
@@ -68,9 +68,10 @@
 
 .one img{
     width: 600px;
-    height: 600px;
+    height: 500px;
     align-items: left;
     border-radius: 0px;
+   
 }
 .letstalk-button:active {
     transform: translateY(2px); /* move the button down slightly on click */
