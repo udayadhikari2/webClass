@@ -1,0 +1,77 @@
+#why-us{
+    height: 100vh;
+    
+}
+.main-box{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+.l-up{
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(7, 124, 56);
+    color: white;
+    padding: 20px;
+}
+.l-up i{
+    padding: 10px;
+}
+.l-down{
+    height: 50vh;
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+.l-down i{
+    padding: 10px;
+}
+.middle{
+    height: 100vh;
+    width: 50%;
+}
+.middle img{
+    width: 550px;
+    height: 100vh;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.box-height{
+    height: calc(100vh / 2);
+}
+.r-up{
+    height: 50vh;
+    background-color: white;
+    text-align: right;
+    padding: 20px;
+}
+.r-down{
+    display:flex ;
+    flex-direction: row;
+}
+.r-down-l{
+    width: 50%;
+    background-color: green;
+    color: white;
+    padding: 20px;
+}
+.r-down-l i{
+    padding: 10px;
+}
+.r-down-r{
+    width: 50%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.r-down-r i{
+    padding: 10px;
+}

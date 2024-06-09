@@ -6,8 +6,8 @@
     margin: auto;
     margin:0px 15px;
     }
-    .title{
-       color: blanchedalmond;
+    /* .title{
+       color: rgb(11, 92, 185);
        text-align: center;
        padding: 20px;
        
@@ -30,7 +30,7 @@
      margin: auto;
      padding: 0px 15px;;
        color: antiquewhite;
-       /* padding-left: 70PX; */
+       
        padding-top: 20px;
        display: flex;
        flex-direction: row;
@@ -60,4 +60,29 @@
        flex-direction: column;
      }
    }
-   
+     */
+     .abt-us-cont
+     {
+      display: flex;
+      flex-direction: row;
+
+     }
+     .info {
+      margin-left: 250px;
+      display: flex;
+      color: aliceblue;
+      justify-content: center;
+      
+     }
+     .info span{
+      color: red;
+     }
+     .abt-img{
+      margin: 30px;
+     }
+     /* p{
+      font-size: 30px;
+      color: aliceblue;
+      padding-top: 15px;
+     }
+ */
