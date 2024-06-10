@@ -5,6 +5,7 @@
 .whyus-container {
     display: flex;
     flex-direction: row;
+    color: white;
 }
 .box-height {
  height: calc(100vh / 2);
@@ -13,12 +14,45 @@
     background-color: rgb(3, 88, 60);
     color: white;
 }
-.whyus-box1>*{
+.box-style>*{
     padding: 18px 12px;
 }
-.whyus-box1 i{
+.box-style i{
     font-size: 48px;
 }
 .whyus-box8 {
     display: flex;
 }
+.whyus-box4{
+    text-align: right;
+    color: black;
+   
+}
+.whyus-box2 i {
+font-size:  48px; 
+}
+.whyus-box3 img{
+    height: 100vh;
+    width: 500px;
+    object-fit:cover;
+}
+.whyus-box5{
+    width: 50%;
+    background-color:rgb(3, 88, 60);
+
+}
+.whyus-box6{
+    width: 50%;
+    background-color:rgb(3, 3, 3);
+    
+}
+.whyus-box2{
+    color: black;
+}
+
+
+
+
+
+
+
