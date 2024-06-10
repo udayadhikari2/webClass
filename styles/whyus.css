@@ -1,5 +1,5 @@
 #whyus{
-    height: 100vh;
+    height: 78vh;
     margin:none;
     background-color:white;
 }
@@ -8,13 +8,17 @@
     flex-direction: row;
     
 }
+.image{
+   
+}
 .image img{
-    height: 600px;
-    width: 500px;
+    height: 609px;
+    width: 100%;
     display: flex;
     margin-right: 200px;
     justify-content: center;
     align-items: center;
+    
 }
 .left-why{
     display: flex;
@@ -50,7 +54,7 @@
 
 }
 .leftdown{
-    background-color: rgb(238, 241, 238);
+   
     display: flex;
     flex-direction: column;
     height: 280px;
@@ -86,4 +90,93 @@
 .col{
     display: flex;
     flex-direction: column;
+    margin: auto;
+    padding: auto;
+
 }
+.righttop{
+    height: 300px;
+    
+}
+.righttop h1{
+    font-size: 2em;
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    padding: 12px;
+
+}
+.righttop h2{
+font-size: 2em;
+display: flex;
+text-align: right;
+padding: 12px;
+flex-direction: column;
+margin-top: -30px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.righttop h3{
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    text-align: right;
+    margin-top: -12px;
+
+}
+.righttop p{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: auto;
+    font-size: 1em;
+    
+}
+.right2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.r1{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    height:39.5vh;
+    background-color: green;
+    padding-left: 30px;
+
+}
+.r1 i{
+    margin-top: 8px;
+    padding: 12px;
+}
+ .r1 h1{
+    font-size: 2em;
+    padding: 8px;
+
+ }
+
+/* 
+
+.down{
+    display: flex;
+    flex-direction: row;
+  
+    
+}
+.rightdown{
+    background-color: green;
+     width: 250px;
+    height: 38vh;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+ 
+}
+ .rightdown1 h1{
+    font-size: 2em;
+    padding: 12px;
+ }
+
+*/
