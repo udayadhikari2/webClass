@@ -2,7 +2,82 @@
     height: 100vh;
     background-color:rgb(10, 107, 50) ;
 }
-.about-us-container{
+.whyus-container{
     display: flex;
     flex-direction: row;
+}
+.box1.size{
+    height: 50vh;
+}
+.why-us-box1{
+     height: 50vh;
+    background-color: green;
+font-size: bold;
+font-size: 2em;
+padding: 75px;
+}
+.why-us-box1 p{
+    font-size: medium;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.why-us-box2{
+height: 50vh;
+background-color: antiquewhite;
+font-size: 2em;
+padding: 75px;
+}
+.why-us-box2 p{
+    font-size: medium;
+    font-style: italic;
+    font-weight: bold;
+}
+.why-us-box3 img{
+    height: 100vh;
+
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+    font-weight:bolder;
+}
+.class1{
+    display: flex;
+}
+.why-us-box4{
+    height: 50vh;
+    background: white;
+    font-weight: bolder;
+    font-size: 2em;
+    padding: 75px;
+}
+.why-us-box4 p{
+    font-size: medium;
+    font-style: italic;
+}
+.why-us-box5{
+    height: 50vh;
+    background-color:rgb(97, 158, 0);
+    font-size: 2em;
+    padding: 75px;
+
+}
+.why-us-box5 p{
+    font-size: medium;
+    font-style: italic;
+
+}
+.why-us-box6{
+    height: 50vh;
+    background-color: aquamarine;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 75px;
+    
+}   
+.why-us-box6 p{
+    font-size: medium;
+    font-style: italic;
+    
 }
