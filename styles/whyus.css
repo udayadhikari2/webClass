@@ -7,47 +7,65 @@
     display: flex;
     flex-direction: row;
     color: white;
+    justify-content: center;
+    width: 100%;
 }
 
 .why-us-box-height {
     height: calc(100vh / 2);
 }
-.why-us-container i{
+
+.why-us-container i {
     color: white;
     font-size: 48px;
+}
+
+.why-us-box-1-2-container {
+    flex: 1;
+}
+
+.why-us-box-3 {
+    flex: 1;
 }
 
 .why-us-box-1 {
     background-color: rgb(3, 92, 62);
 }
-.why-us-box-2{
+
+.why-us-box-2 {
     background-color: white;
     color: black;
 }
-.why-us-box-2 i{
+
+.why-us-box-2 i {
     color: black;
 }
-.why-us-box-4{
-    width: 100%;
+
+.why-us-box-4 {
     padding: 10px;
     background-color: white;
     color: black;
 }
-.why-us-box-4 >*{
+
+.why-us-box-4>* {
     padding: 12px 4px;
 }
-.why-us-box-4 h1{
+
+.why-us-box-4 h1 {
     font-size: 36px;
     font-weight: lighter;
 }
-.why-us-box-4 h1 span{
-    font-size:42px;
+
+.why-us-box-4 h1 span {
+    font-size: 42px;
     font-weight: bold;
 }
-.why-us-box-4 > *{
+
+.why-us-box-4>* {
     text-align: right;
     right: 0px;
 }
+
 .why-us-box-5 {
     background-color: rgb(3, 92, 62);
 }
@@ -65,7 +83,7 @@
 }
 
 .why-us-box-3 img {
-    width: 550px;
+    /* width: 550px; */
     height: 100vh;
     object-fit: cover;
 }
