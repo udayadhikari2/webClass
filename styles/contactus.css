@@ -1,0 +1,40 @@
+#contact-us{
+    height: 100vh;
+    background-color: rgb(231, 198, 107);
+}
+textarea{
+    resize: none;
+}
+.form-container{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 20px;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+.form-message-container{
+     font-weight:bold; 
+     background-color: rgb(0, 153, 255);
+    box-shadow: 2px 2px 5px ;
+     height: 300px;
+    width: 50%;
+    padding: 100px;   
+}
+.form-message-container p{
+   padding: 15px 12px;
+   border-top-left-radius: 12px;
+   border-bottom-left-radius: 12px;
+    font-weight: bolder;
+    font-size: medium;
+    color: black;
+}
+.form-message-container h1{
+    color: red;
+}
+form{
+    display: flex;
+    flex-direction:column;
+    padding: 5%;
+    color: black;
+}
