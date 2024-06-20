@@ -8,7 +8,7 @@
     justify-content: space-around;
     align-items: center;
 }
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 768px) {
     #about-us{
         height: 750px;
     }

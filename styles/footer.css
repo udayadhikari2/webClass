@@ -23,9 +23,9 @@
     align-items: center;
     min-height: calc(110px - 24px);
 }
-@media screen and (max-width:660px){
+@media screen and (max-width:768px){
     .footer-floating{
-        height: 150px;
+        height: auto;
     }
     .footer-floating-content{
         display: flex;
@@ -38,7 +38,12 @@
     .floating-button button{
        margin: 0px 10px;
     }
-
+    #footer{
+        height: auto;
+    }
+    .icons ul{
+        flex-direction: row;
+    }
 }
 
 .footer-floating-content button {

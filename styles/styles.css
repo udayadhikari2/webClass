@@ -12,6 +12,7 @@ body {
 .container {
   background-color: rgba(160, 215, 224, 0.582);
 }
+
 nav {
   display: flex;
   width: 100%;
@@ -28,7 +29,7 @@ nav {
   height: 60px;
 }
 
- ul {
+ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -36,12 +37,12 @@ nav {
   margin: 0;
 }
 
- ul li {
+ul li {
   text-decoration: none;
   list-style: none;
 }
 
- ul li a {
+ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 18px;
@@ -50,7 +51,7 @@ nav {
   transition: all 0.5s ease-in-out;
 }
 
- ul li a:hover {
+ul li a:hover {
   border-bottom: 1px solid rgb(107, 3, 3);
 }
 
@@ -133,16 +134,25 @@ nav {
     height: auto;
   }
 
+  nav>* {
+    margin: 8px 0px;
+  }
+
   .logo img {
     height: 50px;
   }
 
-   ul {
+  ul {
     flex-direction: column;
     align-items: center;
   }
 
-   ul li a {
+  ul>* {
+    padding: 5px 2px;
+    margin: 5px 0px;
+  }
+
+  ul li a {
     margin: 10px 0;
   }
 
@@ -160,7 +170,7 @@ nav {
     height: 40px;
   }
 
- ul li a {
+  ul li a {
     font-size: 16px;
     margin: 8px 0;
   }
@@ -175,4 +185,3 @@ nav {
     font-size: 12px;
   }
 }
-
