@@ -1,0 +1,31 @@
+#contact-us{
+    height: 100vh;
+    background-color:blue
+}
+.form-container{
+    display: flex;
+    flex-direction: row;
+    padding:  50px;
+    width: 50%;
+    align-items: center;
+margin: auto;
+color: white;
+}
+.form-message{
+    background-image: linear-gradient(to right,blue,rgb(135, 129, 129),skyblue);
+   height: 400px;
+   box-shadow: 2px 2px 5px;
+   
+    
+}  
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background: white;
+height: 400px;
+width: 50%;
+}
+textarea{
+    resize: none;
+}
