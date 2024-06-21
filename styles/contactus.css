@@ -1,31 +1,76 @@
-#contact-us{
+#contact-us {
     height: 100vh;
-    background-color:blue
+    background-color: rgb(49, 49, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.form-container{
+
+.form-container {
     display: flex;
     flex-direction: row;
-    padding:  50px;
+    padding: 50px;
     width: 50%;
     align-items: center;
-margin: auto;
-color: white;
+    margin: auto;
+
+
 }
-.form-message{
-    background-image: linear-gradient(to right,blue,rgb(135, 129, 129),skyblue);
-   height: 400px;
-   box-shadow: 2px 2px 5px;
-   
-    
-}  
-form{
+
+.form-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to right, blue, rgb(48, 178, 229));
+    height: 400px;
+    box-shadow: 2px 2px 5px black;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+    border: 1px;
+
+}
+
+.form-message>* {
+    margin: 4px;
+}
+
+form {
     display: flex;
     flex-direction: column;
     padding: 50px;
     background: white;
-height: 400px;
-width: 50%;
+    height: 400px;
+    width: 50%;
+    box-shadow: 2px 2px 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
-textarea{
+
+textarea {
     resize: none;
+}
+
+form>* {
+
+    margin: 5px 0px;
+}
+
+.form-container form input,
+textarea {
+    padding: 8px 5px;
+    outline: none;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-image: linear-gradient(to right, rgb(109, 109, 220), rgb(16, 140, 189));
+    color: white;
+    box-shadow: 5px 5px rgb(198, 198, 251);
 }
