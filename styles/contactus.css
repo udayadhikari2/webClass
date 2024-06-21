@@ -1,40 +1,74 @@
-#contact-us{
+#contact-us {
     height: 100vh;
-    background-color: rgb(231, 198, 107);
+    background-color: rgb(142, 138, 202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-textarea{
+
+textarea {
     resize: none;
 }
-.form-container{
+
+.form-container {
     display: flex;
     flex-direction: row;
+    width: 50%;
     padding: 30px 20px;
     margin: auto;
     color: white;
     align-items: center;
+
 }
-.form-message-container{
-     font-weight:bold; 
-     background-color: rgb(0, 153, 255);
-    box-shadow: 2px 2px 5px ;
-     height: 300px;
-    width: 50%;
-    padding: 100px;   
+.form-message-container>*{
+    padding:10px;
 }
-.form-message-container p{
-   padding: 15px 12px;
-   border-top-left-radius: 12px;
-   border-bottom-left-radius: 12px;
-    font-weight: bolder;
-    font-size: medium;
-    color: black;
-}
-.form-message-container h1{
-    color: red;
-}
-form{
+
+.form-message-container {
+    font-weight: bold;
+    background: rgb(23, 12, 210);
+    background: linear-gradient(90deg, rgba(23, 12, 210, 1) 0%, rgba(68, 68, 224, 1) 35%, rgba(26, 169, 198, 1) 100%);
+    padding: 10px;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+
+.form-content{
+    height: 350px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
     padding: 5%;
     color: black;
+    background: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px;
+    
+
+}
+
+form>* {
+    padding: 1px;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+.form-container form input, textarea{
+padding: 8px 5px;
+outline: auto;
+border-radius: 5px;
+}
+form button{
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    box-shadow: 5px 5px rgb(199, 198, 215);
+    background-image:linear-gradient(to right, rgb(109, 109, 220), rgb(16,140,189));
 }
